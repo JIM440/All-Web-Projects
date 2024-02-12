@@ -1,0 +1,230 @@
+:root {
+  --color-blue: rgb(85, 122, 236);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --grey: hsl(219, 21%, 87%);
+  --white: hsl(0, 0%, 100%);
+  --shadow: 0px 8px 8px rgba(85, 122, 236, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: min(1000px, 90%);
+  margin: auto;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 15px;
+  color: var(--medium-grey);
+  line-height: 1.8;
+}
+
+.dates small {
+  font-weight: normal;
+  color: var(--grey);
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--very-dark-blue);
+}
+
+header {
+  padding-bottom: 100px;
+}
+
+.even-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 1rem;
+}
+
+.even-columns > div:nth-child(1) {
+  order: 2;
+}
+
+button {
+  padding: 16px 32px;
+  font-size: 1.5rem;
+  border-radius: 28px;
+  color: var(--white);
+  box-shadow: var(--shadow);
+  background-color: var(--color-blue);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: royalblue;
+}
+
+.img-logo {
+  width: 100px;
+}
+.even-columns > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 700px) {
+  .even-columns > div:nth-child(1) {
+    order: 1;
+  }
+  .even-columns > div:nth-child(2) {
+    order: 2;
+  }
+  .even-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* prices box */
+
+section {
+  margin-top: 20px;
+}
+
+.prices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.price-boxes {
+  box-shadow: var(--shadow), 0px -4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+}
+
+.price-boxes p {
+  line-height: 4;
+}
+
+.bold {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.price-boxes button {
+  color: var(--color-blue);
+  background-color: var(--grey);
+}
+
+.price-boxes:hover,
+.price-boxes:hover p,
+.price-boxes:hover h2 {
+  color: var(--white);
+  background-color: var(--color-blue);
+}
+
+.price-boxes:hover button {
+  background-color: var(--white);
+  color: var(--color-blue);
+}
+
+.price-boxes h2 {
+  font-size: 48px;
+}
+
+/* count down start */
+
+.count-down {
+  background-color: var(--dark-blue);
+}
+
+.count-down .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 950px 0px 100px;
+  margin-top: -850px;
+  z-index: -1;
+}
+
+@media (min-width: 600px) {
+  .count-down .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1048px) {
+  .count-down .container {
+    padding: 400px 0px 100px;
+    margin-top: -300px;
+  }
+}
+
+.count-down * {
+  color: var(--white);
+  text-align: center;
+}
+
+.count-down span {
+  color: var(--color-blue);
+}
+
+.count-down h3 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.dates {
+  display: flex;
+  gap: 1rem;
+  margin: 28px 0px;
+}
+
+.dates > div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 18px;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .dates > div {
+    padding: 12px 24px;
+  }
+}
+
+.dates p {
+  font-size: 28px;
+  font-weight: bold;
+}
