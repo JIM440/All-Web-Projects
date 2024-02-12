@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+.menu {
+  background-color: #000000;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  margin-left: 130px;
+}
+li.rat {
+  line-height: 80px;
+  color: white;
+  display: inline;
+  padding: 15px;
+  font-size: 25px;
+}
+.div2 {
+  background-color: rgb(248, 246, 246);
+  border: 0;
+  width: 100%;
+  height: 150px;
+}
+p {
+  font-size: 25px;
+  padding: 25px;
+  margin: 150px;
+  line-height: 150px;
+  display: inline;
+}
+img {
+  width: 980px;
+  height: 300px;
+  margin: auto;
+  display: block;
+}
+h2.ma {
+  text-align: center;
+  font-weight: normal;
+}
+h2 {
+  text-align: center;
+}
+a:link {
+  background-color: orange;
+  margin-left: auto;
+  width: 200px;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+a:hover {
+  background-color: rgb(255, 0, 0);
+  color: red;
+  text-decoration: none;
+}
+.center {
+  text-align: center;
+  margin: auto;
+}
+form {
+  text-align: center;
+  line-height: 5px;
+}
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.clo {
+  color: black;
+  list-style-type: circle;
+  margin: 0px;
+  font-size: 25px;
+}
+table {
+  width: 50%;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+table,
+th,
+td {
+  color: black;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
